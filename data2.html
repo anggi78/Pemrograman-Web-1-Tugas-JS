@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Data 2</title>
+        <link rel="stylesheet" href="data.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+ 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    </head>
+    <body>
+        <div class="slide">
+            <div class="wrapper">
+                <div class="sidebar">
+                     <!--profile image-->
+                     <div class="profil">
+                        <img src="anggi.jpeg" alt="">
+                        <h1>Aisyah R. Pohontu F55121054</h1>
+                        <hr>
+                    </div>
+            <ul>
+                <li><a href="sidebar.html"><i class="fas fa-home"><input type="button" class="btn" value="Home"></i> Home</a></li>
+                <li><a href="data.html"><i class="fas fa-table"><input type="button" class="btn" value="Data"></i> Data</a></li>
+                <li><a href="formulir.html"><i class="far fa-address-book"><input type="button" class="btn" value="Formulir"></i> Formulir</a></li>
+                <li><a href="index.html"><i class="fas fa-sign-out"><input type="button" class="btn" value="Log Out"></i> Log out</a></li>
+            </ul>       
+            </div>
+            <div class="main_content">
+                <div class="header"></div>
+                <div class="info">
+                    <header></header>
+        <nav></nav>
+        <main>
+            <table id="tabelSaya" class="display">
+                <thead>
+                    <tr bgcolor="pink">
+                        <th>No</th>
+                        <th>Jenis Kucing</th>
+                        <th>Usia</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Anggora</td>
+                        <td>6 Bulan</td>
+                        <td>Rp3 - 7 juta</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Persia</td>
+                        <td>3 Tahun</td>
+                        <td>Rp5 - 6 juta</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Siam</td>
+                        <td>1 Tahun</td>
+                        <td>Rp8,5 - 17 juta</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Himalaya</td>
+                        <td>2 Tahun</td>
+                        <td>Rp1 juta</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Turki</td>
+                        <td>5 Bulan</td>
+                        <td>Rp3 - 7 juta</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Bengal</td>
+                        <td>4 Tahun</td>
+                        <td>Rp21 - 42 juta</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Sphynx</td>
+                        <td>3 Bulan</td>
+                        <td>Rp1,8 - 25 juta</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Ragdoll</td>
+                        <td>2 Tahun</td>
+                        <td>Rp2,5 - 30 juta</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Siberia</td>
+                        <td>2 Bulan</td>
+                        <td>Rp14,16 - 28,32 juta</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Kampung</td>
+                        <td>1 Tahun</td>
+                        <td>Rp500 ribu - 1 juta</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Scottish Fold</td>
+                        <td>3 Tahun</td>
+                        <td>Rp17 juta</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Savannah</td>
+                        <td>12 Tahun</td>
+                        <td>Rp300 juta</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Ashera</td>
+                        <td>4 Tahun</td>
+                        <td>Rp51,8 miliar</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Toyger</td>
+                        <td>6 Tahun</td>
+                        <td>Rp71,3 juta</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Chartreux</td>
+                        <td>1 Tahun</td>
+                        <td>Rp15 - 50 juta</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </main>
+        <footer></footer>
+        <script>
+            $(document).ready(function(){
+                $("#tabelSaya").DataTable();
+            });
+        </script>
+                </div>
+            </div>
+           
+    </body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulir</title>
+        <link rel="stylesheet" href="formulir.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawasome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="slide">
+            <div class="wrapper">
+                <div class="sidebar">
+                     <!--profile image-->
+                     <div class="profil">
+                        <img src="anggi.jpeg" alt="">
+                        <h1>Aisyah R. Pohontu F55121054</h1>
+                        <hr>
+                    </div>
+            <ul>
+                <li><a href="sidebar.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="data2.html"><i class="fas fa-table"></i> Data</a></li>
+                <li><a href="formulir.html"><i class="far fa-address-book"></i> Formulir</a></li>
+                <li><a href="index.html"><i class="fas fa-sign-out"></i> Log out</a></li>
+            </ul>       
+                </div>
+                <div class="main_content">
+                    <div class="header"></div>
+                    <div class="info">
+                        <form id="form">
+                            <table border="0">
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <h1>Formulir Penitipan Kucing</h1><br>
+                                    </td>
+                                </tr>
+                                <div class="input-group">
+                                    <tr>
+                                        <td colspan="2">
+                                            <label>Full Name</label><br>
+                                            <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                                            <span id="name-error"></span>
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="input-group">
+                                    <tr>
+                                        <td colspan="2">
+                                            <label>Email</label><br>
+                                            <input type="email" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+                                            <span id="email-error"></span>
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="input-group">
+                                    <tr>
+                                        <td colspan="2">
+                                            <label>Phone No.</label><br>
+                                            <input type="tel" placeholder="0813 422 103" id="contact-phone" onkeyup="validatePhone()">
+                                            <span id="phone-error"></span>
+                                        </td>
+                                    </tr>
+                                </div>
+                                <div class="input-group">
+                                    <tr>
+                                        <td colspan="2">
+                                            <label>Address</label><br>
+                                            <input type="text" placeholder="Enter your address" id="contact-address" onkeyup="validateAddress()">
+                                            <span id="address-error"></span>
+                                        </td>
+                                    </tr>
+                                </div>
+                                <tr>
+                                    <td colspan="2">
+                                        <label>Date Deposite</label><br>
+                                        <input type="date" id="date">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <label for="">Gender :</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <input type="radio" name="Jk" value="Lk"/>Male
+                                    </td>
+                                    <td align="center">
+                                        <input type="radio" name="Jk" value="Pr"/>Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2">
+                                        <label for="">Rate :</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <input type="radio" name="Rg" value="Reguler"/>Regular
+                                    </td>
+                                    <td align="center">
+                                        <input type="radio" name="Pk" value="Paket"/>Package
+                                    </td>
+                                </tr>
+                            </table>
+                            <table align="center">
+                                <tr>
+                                    <button type="button" id="btn" onclick="return validateForm()">Submit</button>
+                                    <span id="submit-error"></span>
+                                </tr>
+                            </table>  
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script src="form.js"></script>
+    </body>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <!-- <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            Swal.fire({
+                title: 'Berhasil',
+                text: 'Yeey',
+                icon: 'success'
+            })
+        });
+    </script> -->
+    <!-- <script>
+        const delete = document.getElementById('delete');
+        delete.addEventListener('click', function(){
+            Swal.fire({
+                title: 'Kamu Yakin?',
+                text: "Data ini akan hilang!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, Deleted It!'
+                }).then((result) => {
+                if (result.isConfirmed) {
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+                )
+                }
+                })
+        });
+    </script>   -->
+</html>

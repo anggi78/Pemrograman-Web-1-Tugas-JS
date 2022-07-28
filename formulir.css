@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f3f5f9;
+}
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(pink, grey);
+    padding: 30px 0;
+}
+.wrapper .sidebar .profil{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper .sidebar .profil img{
+    display: block;
+    width: 100px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.wrapper .sidebar .profil h1{
+    color: black;
+    margin: 10px 0 5px;
+    font-size: 15px;
+}
+ul li{
+    list-style: none;
+    width: 100%;
+}
+ul li a{
+    width: 100%;
+    color: black;
+    font-weight: 500;
+    padding: 13px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+ul li:hover a{
+    color: #fff;
+    background-color: palevioletred;
+
+}
+.info input{
+    border: 2px solid pink;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.info{
+    background-color: #f3f5f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* .info.success input{
+    border-color: #2ecc71;
+}
+.info.error input{
+    border-color: #e74c3c;
+} */
+/* .info i{
+    position: absolute; */
+    /* top: 0%; */
+    /* right: 10px;
+    visibility: hidden; */
+}
+/* .form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+} */
+/* .form button{
+    background-color: rgb(255, 85, 204);
+    border: 2px solid #f365db;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+} */
+::placeholder{
+    font-size: 14px;
+}
+/* span{
+    color: rgb(214, 101, 120);
+} */
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+.wrapper .main_content{
+    width: 85.4%;
+    margin-left: 200px;   
+}
+.wrapper .main_content .header{
+    padding: 30px;
+    background: pink;
+    border-bottom: 1px solid #e0e4e8;
+}
+.wrapper .main_content .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+}
+.wrapper .main_content .info h3{
+    padding: 40px;
+    justify-content: space-between;
+    margin: 10px 0 5px;
+    margin-bottom: 20px;
+}
+.wrapper .main_content .info div{
+    margin-bottom: 20px;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 150, 164);
+    margin: 30px, 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    top: 50%;
+    left: 5px;
+    color: #717171;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+#date {
+    width: 100%;
+}
+table {
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+Input {
+    width: 99%;
+    height: 50%;
+    border-radius: 10px;
+    border-color: rgb(255, 130, 193);
+    padding: 5px;
+}
+h1{
+    font-size: 150%;
+}
+form button{
+    background: rgb(230, 90, 160);
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+span{
+    color: red;
+}
+#submit-error{
+    color: red;
+}
+span i{
+    color: seagreen;
+}
